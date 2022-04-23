@@ -1,0 +1,227 @@
+@import url(./reset.css);
+@media (max-width:786px){
+    .container{
+        background-color: #FFFFFF;
+    }
+}
+
+
+
+body {    
+  font-family: "Noto Sans KR", sans-serif;
+    background-color: #eae8fe;
+  }
+
+  button {
+      border: 0;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5)
+  }
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+            clip-path: polygon(0 0, 0 0, 0 0);
+}
+.main_logo {  
+    position: absolute;
+    width: 386px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-top: 248px;
+        gap: 0 28px;
+}
+
+.left_menu, .right_menu {
+    width: 360px;
+    background-color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    
+}
+
+.cola_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 31px 27px;
+    z-index: 1;
+}
+
+.cola_btn {
+border-radius: 10px;
+padding: 10px;
+background-color: #FFFFFF;
+}
+.cola_name {
+    font-size: 9px;
+    display: inline-block;
+    margin:5px 0;
+}
+.cola_price {
+    border-radius: 50px;
+    background-color: #6327FE;
+    font-size: 12px;
+    color:#FFFFFF;
+    display: inline-block;
+    padding: 4px 15px;
+}
+
+.function_tool {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 12px;
+  margin: -10px 27px 20px;
+
+}
+
+.function_tool .left_balance,
+.function_tool .deposit,
+.function_tool .selected_cola {
+    padding: 7px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.left_balance {
+    background-color: #eae8fe;
+}
+
+.current_balance {
+    float: right;
+}
+.deposit {
+    border: 1px solid #BDBDBD;
+}
+.function_btn {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 13px;
+}
+
+.selected_cola {
+    height: 106px;
+    overflow-y: scroll;
+    background-color: #eae8fe;
+    border: 1px solid #bdbdbd;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.selected_cola li {
+    border-radius: 5px;
+}
+
+.selected_cola button {
+    width: 100%;
+    margin: 3px 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.selected_cola img {
+    width: 18px;
+    float:left;
+}
+
+.selected_cola .cola_name {
+    font-size: 9px;
+    line-height: 20px;
+    float:left;
+    margin-left: 10px;
+}
+
+.num-counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    float: right;
+}
+
+.acheive {
+    background-color: #6327FE;
+    color: #ffffff;
+    font-weight: 700;
+}
+.right_menu {
+    background-color: #eae8fe;
+}
+.money_back {
+    padding: 9px 27px;
+    background-color: #FFFFFF;
+}
+.money {
+    background-color: #eae8fe;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.num_money {
+    float: right;
+}
+
+.acquired_cola {
+    margin-top: 20px;
+    padding: 25px 27px 32px;
+    background-color: #ffffff;
+    text-align: center;
+    
+}
+.acquired_cola .selected_cola {
+    width: 306px;
+    height: 364px;
+    padding: 12px;
+}
+
+.acquired_cola h2 {
+    font-size: 14px;
+    font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.total_price {
+    padding-top: 7px;
+    text-align: right;
+}
+
+
+.cola_btn:hover {
+    outline: #6327FE solid 3px;
+}
+.cola_btn:focus {
+    outline: #6327FE solid 3px;
+  }
+
+.sold-out::before {
+    background-image: url(./images/redcola.svg);
+}
